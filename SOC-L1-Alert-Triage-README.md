@@ -51,9 +51,10 @@ The comment noted that M.Clark is a corporate CEO and confirmed that they access
 Alert prioritization is the process of deciding which alerts to investigate first. This is done by checking the alert hasn’t already been reviewed, checking its severity level, and considering when it occurred. Always prioritize the most critical alerts first, as they are more likely to represent severe threats. Older alerts should be handled before newer ones, since the attacker may already be in a later stage of their attack compared to a threat that just triggered a new alert.
 
 <img width="1156" height="515" alt="Pasted image 20250812222043" src="https://github.com/user-attachments/assets/4e19fc82-f2a5-468f-a37e-38b364fc2faf" />
+<br>
+<br>
 
 Based on the alerts displayed, the critical alert **"Potential Data Exfiltration"** is the best to address first. I assigned it to myself and changed the status to **"In Progress"** to inform the SOC team that I am working to remediate this threat.
-
 <img width="1220" height="669" alt="Pasted image 20250812222358" src="https://github.com/user-attachments/assets/11652c53-ed81-44b2-b835-331287565d86" />
 
 <img width="1104" height="47" alt="Pasted image 20250812222430" src="https://github.com/user-attachments/assets/2b8d3dff-5a1c-42c5-9f32-86d53d39203b" />
