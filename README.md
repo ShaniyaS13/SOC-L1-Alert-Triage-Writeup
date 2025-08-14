@@ -73,7 +73,7 @@ Alert triage involves the prioritization and assessment of a specific alert, sta
    <img width="907" height="231" alt="Pasted image 20250814141318" src="https://github.com/user-attachments/assets/c6aed074-752a-4601-922e-d082ed2acf84" />
    <img width="504" height="344" alt="Pasted image 20250814144055" src="https://github.com/user-attachments/assets/12fe8539-0cdf-4b95-8852-4f59ac6a63ba" />
 
-## Task 5: Conclusion
+## Task 6: Conclusion
 ### Process Highlights
 - **Monitored & Classified Alerts**: Identified 5 incoming alerts in the SOC dashboard, classified them by severity, and prioritized response to a “Potential Data Exfiltration” incident.
 - **Triage & Investigation**: Validated alert properties (severity, timestamp, affected user), ruled out false positives (ex. “Unusual VPN Login Location” by M.Clark), and investigated suspicious file activity.
