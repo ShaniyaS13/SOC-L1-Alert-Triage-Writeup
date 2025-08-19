@@ -6,7 +6,7 @@ A collection of my practical cybersecurity lab exercises, simulations, and write
 ## 🧪 Labs Completed
 
 - [SOC L1 Alert Triage](https://github.com/ShaniyaS13/SOC-Labs/blob/main/SOC-L1-Alert-Triage-README.md) — Practical hands-on SOC Level 1 simulation
-
+- [Threat Intelligence Tools](https://github.com/ShaniyaS13/SOC-Labs/blob/main/Threat-Intelligence-Tools-README.md) Practical hands-on Threat Intelligence Practical Lab
 <!--
 ## 📂 Repository Structure
 
