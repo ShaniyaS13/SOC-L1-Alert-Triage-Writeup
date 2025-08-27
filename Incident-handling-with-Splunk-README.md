@@ -207,17 +207,16 @@ Since ThreatMiner (used for threat analysis and research) was unavailable, I rel
 
 
 ## Conclusion
-This investigation demonstrates how Splunk can be leveraged for incident handling, starting with the detection of reconnaissance activity and ending with attribution to a known APT group. By following the Cyber Kill Chain phases, I was able to map attacker behavior from scanning and brute-forcing Joomla credentials, to the successful installation of malware (`3791.exe` / `ab.exe`), website defacement with the Poison Ivy image, and eventual C2 communications with malicious infrastructure.
+This investigation demonstrates how Splunk can be leveraged for incident handling, starting with the detection of reconnaissance activity and ending with attribution to a known APT group. By following the Cyber Kill Chain phases, I was able to map the attacker's behavior of scanning and brute-forcing Joomla credentials, to the successful installation of malware (`3791.exe` / `ab.exe`), website defacement with the Poison Ivy image, and concluded by C2 communications with malicious infrastructure.
 
-A key takeaway is the importance of pivoting in defensive investigations. Just as attackers pivot between hosts and networks, security analysts pivot across multiple intelligence sources. From domains to IPs, from hashes to malware samples, and from infrastructure to email addresses. Using tools like VirusTotal, AlienVault OTX, Robtex, and Hybrid-Analysis provided visibility into the attacker’s broader infrastructure, allowed attribution to the Poison Ivy APT group, and reinforced how OSINT works well together with log analysis in Splunk. The lab reinforced how combining SIEM queries with OSINT tools can give a complete scope of an attack.
+A key takeaway is the importance of pivoting in defensive investigations. Just as attackers pivot between hosts and networks, security analysts pivot across multiple intelligence sources. From domains to IPs, hashes, malware samples, and infrastructure to email addresses. Using tools like VirusTotal, AlienVault OTX, Robtex, and Hybrid-Analysis provided visibility into the attacker’s broader infrastructure, allowed attribution to the Poison Ivy APT group, and reinforced how OSINT works well together with log analysis in Splunk. The lab demonstrated how combining SIEM queries with OSINT tools can give a complete scope of an attack.
 
 ### Process Highlights
 - **Log Analysis in Splunk**: Queried BOTSv1 dataset for domain, HTTP, IDS, and Windows logs to trace activity.
 - **Reconnaissance Detection**: Identified attacker IPs, Joomla CMS detection, and Acunetix user-agent scans.
 - **Exploitation Evidence**: Found SQL injection attempts, brute force activity against `joomla/administrator/index.php`, and 412 unique password attempts.
-- **Installation Proof**: Confirmed upload and execution of `3791.exe` as `NT AUTHORITY\IUSR`; identified hash linked to malicious `ab.exe`.
+- **Installation Proof**: Confirmed upload and execution of `3791.exe` as `NT AUTHORITY\IUSR`. Also identified hash linked to malicious `ab.exe`.
 - **Defacement & Objectives**: Discovered `poisonivy-is-coming-for-you-batman.jpeg` and PHP uploads tied to SQL injection exploitation.
 - **C2 Infrastructure**: Mapped communication to `prankglassinebracket.jumpingcrab.com` and related domains.
 - **OSINT Pivoting**: Used VirusTotal, AlienVault OTX, Robtex, and Hybrid-Analysis to pivot from IPs to domains, hashes, malware, and email indicators.
 - **Attribution**: Correlated findings to Poison Ivy APT group infrastructure, supported by multiple indicators.
-dit
